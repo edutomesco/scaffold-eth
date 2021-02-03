@@ -220,6 +220,14 @@ function App(props) {
               blockExplorer={blockExplorer}
             />
 
+            <Button
+              onClick={() => {
+                tx(writeContracts.YourContract.setPurpose("👋 Hello World"))
+              }}
+            >
+              Button
+             </Button>
+
 
             { /* uncomment for a second contract:
             <Contract
